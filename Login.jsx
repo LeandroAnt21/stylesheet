@@ -1,28 +1,28 @@
-import { TextInput, Button, Pressable, Text, View, Image, StyleSheet } from 'react-native'; // [ALTERAÇÃO]: Importado o 'StyleSheet'
+import { TextInput, Button, Pressable, Text, View, Image, StyleSheet } from 'react-native'; 
 
 export default function App() {
   return (
-    // [ALTERAÇÃO]: Substituído estilo inline por styles.container
+  
     <View style={styles.container}>
 
       <View>
         <Image
           source={{ uri: 'https://cdn-icons-png.flaticon.com/512/2407/2407510.png' }}
-          // [ALTERAÇÃO]: Substituído estilo inline por styles.logo
+          
           style={styles.logo}
         />
       </View>
 
       <Text
-        // [ALTERAÇÃO]: Substituído estilo inline por styles.title
+       
         style={styles.title}
       >
         biblioteca de grimórios
       </Text>
 
-      {/* [ALTERAÇÃO]: Substituído estilo inline por styles.subtitleContainer */}
+
       <View style={styles.subtitleContainer}>
-        {/* [ALTERAÇÃO]: Substituído estilo inline por styles.subtitleText */}
+       
         <Text style={styles.subtitleText}>
           Este acervo secreto reúne os diários de campo, mapas e grimórios dos lugares mais hostis, isolados e letais do planeta.
         </Text>
@@ -32,7 +32,7 @@ export default function App() {
 
       <TextInput
         placeholder="digite Seu E-mail"
-        // [ALTERAÇÃO]: Substituído estilo inline por styles.input
+        
         style={styles.input}
       />
 
@@ -41,7 +41,7 @@ export default function App() {
       <TextInput
         placeholder="insira sua senha"
         secureTextEntry={true}
-        // [ALTERAÇÃO]: Substituído estilo inline por styles.input
+        
         style={styles.input}
       />
 
@@ -53,7 +53,7 @@ export default function App() {
       />
 
       <Pressable
-        // [ALTERAÇÃO]: Substituído estilo inline por styles.pressableButton
+       
         style={styles.pressableButton}
         onPress={() => {
           alert("alterar email/senha");
@@ -63,7 +63,7 @@ export default function App() {
       </Pressable>
 
       <Pressable
-        // [ALTERAÇÃO]: Substituído estilo inline por styles.pressableButton
+       
         style={styles.pressableButton}
         onPress={() => {
           alert("Criar uma conta");
@@ -75,7 +75,7 @@ export default function App() {
   );
 }
 
-// [ALTERAÇÃO]: Criado o objeto de estilização usando StyleSheet.create
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
